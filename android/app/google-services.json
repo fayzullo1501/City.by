@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131103658536",
+    "project_id": "portme-login",
+    "storage_bucket": "portme-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131103658536:android:ae6e873abd7d3cf34e5b1d",
+        "android_client_info": {
+          "package_name": "com.example.portme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131103658536-vlojdsn85025g4bcppku1ho2n6l6k4sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Lh7YM4_hFsqtFA4voSherIpjiugAu4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131103658536-vlojdsn85025g4bcppku1ho2n6l6k4sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
