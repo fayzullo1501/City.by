@@ -1,29 +1,20 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:portme/naviigation_drawer.dart';
+import 'package:portme/Minsk.dart';
 import 'package:portme/Brest.dart';
-import 'package:portme/SignUp/signup.dart';
-import 'Minsk.dart';
 
-class Home extends StatefulWidget {
+class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(leading: IconButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        icon: Icon(Icons.arrow_back_ios,
-          size: 20,
-          color: Color.fromRGBO(26, 97, 79, 1),),
-      ), title: Text("Города республики Беларусь", style: TextStyle(color: Color.fromRGBO(26, 97, 79, 1), fontWeight: FontWeight.bold), ), backgroundColor: Colors.white,),
+        drawer: const NavigationDrawer(),
+        appBar: AppBar(
+          title: const Text('Города Белорусии'),
+          centerTitle: true,
+          backgroundColor: Color.fromRGBO(26, 97, 79, 1),
+        ),
       body: Container(child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: GridView(children: [
@@ -36,11 +27,11 @@ class _HomeState extends State<Home> {
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/minsk.png'),
               ),),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-              Text("Минск", style: TextStyle(color: Colors.white, fontSize: 25),)
-            ],),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Минск", style: TextStyle(color: Colors.white, fontSize: 25),)
+                ],),
             ),
           ),
           InkWell(
@@ -52,7 +43,7 @@ class _HomeState extends State<Home> {
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/brest.png'),
               ),
-              ),
+            ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -83,8 +74,8 @@ class _HomeState extends State<Home> {
             },
             child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('assets/images/vitebsk.png')
+                  fit: BoxFit.cover,
+                  image: AssetImage('assets/images/vitebsk.png')
               ),),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -158,7 +149,7 @@ class _HomeState extends State<Home> {
             ),
           ),
         ],
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
         ),
       ),),
     );

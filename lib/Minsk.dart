@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portme/HomePage.dart';
+import 'package:portme/home.dart';
 
 class DatailPage extends StatefulWidget {
-  const DatailPage({Key? key}) : super(key: key);
+  const DatailPage({Key? key}) : super(key: key); 
 
   @override
   State<DatailPage> createState() => _DatailPageState();
-}
+} 
 
 class _DatailPageState extends State<DatailPage> {
   @override

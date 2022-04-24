@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter OTP Verification',
+      title: 'Laboratory 2',
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
